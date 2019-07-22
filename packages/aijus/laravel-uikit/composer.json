@@ -1,0 +1,28 @@
+{
+    "name": "aijus/laravel-uikit",
+    "description": "laravel用uikitパッケージ",
+    "type": "library",
+    "authors": [
+        {
+            "name": "rikiya.hayashi",
+            "email": "rikiya.hayashi@aijus.com"
+        }
+    ],
+    "minimum-stability": "dev",
+	"require": {},
+	"autoload": {
+		"psr-4": {
+			"aijus\\Uikit\\": "src/"
+		}
+	},
+	"extra": {
+		"laravel": {
+			"providers": [
+				"aijus\\Uikit\\UikitServiceProvider"
+			],
+			"aliases": {
+                "Uikit": "aijus\\Uikit\\Facades\\Uikit"
+            }
+		}
+	}
+}
